@@ -2,6 +2,7 @@
 
 namespace SmartCms\Seo\Traits;
 
+use Illuminate\Database\Eloquent\Relations\MorphOne;
 use SmartCms\Seo\Models\Seo;
 
 /**
@@ -14,7 +15,7 @@ trait HasSeo
     /**
      * Get the SEO relationship.
      *
-     * @return \Illuminate\Database\Eloquent\Relations\MorphOne
+     * @return MorphOne
      */
     public function seo()
     {
